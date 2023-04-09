@@ -93,3 +93,7 @@ left: 0;
 .min{
 	padding:1px;
 }
+
+.max{
+position:absolute
+}
