@@ -1,0 +1,90 @@
+  @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Libre+Baskerville:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    user-select: none;
+    box-sizing: border-box;
+    
+}
+body{
+    margin-top:50px;
+}
+.navbar{
+    position: fixed;
+    z-index: 5;
+    top: 0;
+left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.navbar .logo{
+    font-family: 'Alkatra', cursive;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 10px 20px;
+}
+.navbar .menu{
+    font-size: 30px;
+    margin: 5px 20px;
+    flex-shrink: 0;
+    cursor: pointer;
+
+}
+.links{
+    position:fixed;
+    top: 50px;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    z-index: 3;
+
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.link{
+    font-family: 'Alkatra', cursive;
+    font-family: 'Libre Baskerville', serif;
+  width: 100%;
+  height: 40px;
+  padding: 15px 25%;
+  text-decoration: none;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+.link:hover{
+    background-color: rgb(229, 229, 229);
+}
+.links .active{
+    background-color: rgb(229, 229, 229);
+
+    color: red;
+}
+.links{
+    transform: translateX(-250px);
+
+}
+.style .links{
+    transform: translateX(0px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+.style .nav-overlay{
+    position: fixed;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px);
+    transition: 0.5s;
+
+}
+.para{
+    padding: 10px 20px;
+}
